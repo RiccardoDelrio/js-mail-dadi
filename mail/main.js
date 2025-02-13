@@ -18,11 +18,11 @@ let control = false
 //controlla che sia nella lista di chi può accedere
 for (let i = 0; i < list.length; i++) {
     if (userEmail === list[i]) {
-        //stampa un messaggio appropriato sull’esito del controllo
-        console.log("La tua mail è presente")
+        control = true //stampa un messaggio appropriato sull’esito del controllo
     }
 }
 if (control == true) {
+    console.log("La tua mail è presente")
 } else {
     //stampa un messaggio appropriato sull’esito del controllo
     console.log("la tua mail non è presente");
