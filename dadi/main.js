@@ -7,7 +7,9 @@ console.log(pcNumber)
 alert(`Il  numero del pc ${pcNumber} ora premi ok per sapere chi ha vinto`)
 if (userNumber > pcNumber) {
     console.log("Complimenti hai vinto!")
-
+} else if (userNumber === pcNumber) {
+    alert("pareggio")
+    console.log("Pareggio")
 } else {
     console.log("Ritenta sarai più fortunato!")
     alert("Ritenta sarai più fortunato!")
