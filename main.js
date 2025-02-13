@@ -14,7 +14,12 @@ const list = ["mario@gmail.com", "luca@gmail.com", "luigi@gmail.com", "marco@gma
 console.log(list);
 const userEmail = String(prompt("inserisci qua la tua email per controllare se puoi accedere"))
 let control = false
+for (let i = 0; i < list.length; i++) {
+    if (userEmail === list[i]) {
+        control = true
+    }
 
+}
 
 
 //Chiedi all’utente la sua email
