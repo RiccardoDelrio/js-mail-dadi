@@ -12,18 +12,20 @@ Dopo aver svolto l'esercizio con il for  fai una cartella bonus e svolgilo anche
 
 const list = ["mario@gmail.com", "luca@gmail.com", "luigi@gmail.com", "marco@gmail.com"]
 console.log(list);
-//Chiedi all’utente la sua email
 const userEmail = String(prompt("inserisci qua la tua email per controllare se puoi accedere"))
-let control = false
-//controlla che sia nella lista di chi può accedere
-for (let i = 0; i < list.length; i++) {
-    if (userEmail === list[i]) {
-        //stampa un messaggio appropriato sull’esito del controllo
-        console.log("La tua mail è presente")
-    }
-}
-if (control == true) {
+
+control = list.includes(userEmail);
+console.log(control)
+if (control === true) {
+    console.log("la tua mail è presente nella lista ");
 } else {
-    //stampa un messaggio appropriato sull’esito del controllo
-    console.log("la tua mail non è presente");
+    console.log("la tua mail non è presente nella lista");
+
 }
+//Chiedi all’utente la sua email
+
+
+//controlla che sia nella lista di chi può accedere
+
+
+//stampa un messaggio appropriato sull’esito del controllo
