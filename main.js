@@ -20,6 +20,12 @@ for (let i = 0; i < list.length; i++) {
     }
 
 }
+if (control == true) {
+    console.log("La tua mail è presente")
+} else {
+    console.log("la tua mail non è presente");
+
+}
 
 
 //Chiedi all’utente la sua email
